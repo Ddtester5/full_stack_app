@@ -1,23 +1,27 @@
 {
-  "name": "backand",
-  "version": "0.0.0",
-  "scripts": {
-    "dev": "tsx watch ./src/index.ts ",
-    "build": "rm -rf ./dist && tsc --build ./tsconfig.json",
-    "start": "node ./dist/index.js",
-    "pretti": "prettier --log-level warn --cache --write '{src/**/*,*}{ts,tsx,js,json,yml,scss}' '!**/{node_modules,dist}/**/*'"
-  },
-  "author": "",
-  "license": "ISC",
-  "description": "",
-  "devDependencies": {
-    "@types/express": "^5.0.0",
-    "@types/node": "^22.13.10",
-    "prettier": "^3.5.3",
-    "tsx": "^4.19.3",
-    "typescript": "^5.8.2"
-  },
-  "dependencies": {
-    "express": "^4.21.2"
-  }
+ "name": "@idea/backand",
+ "version": "0.0.0",
+ "main": "src/index.ts",
+ "scripts": {
+  "dev": "tsx watch ./src/index.ts ",
+  "build": "rm -rf ./dist && tsc --build ./tsconfig.json",
+  "start": "node ./dist/index.js",
+  "pretti": "prettier --log-level warn --cache --write '{src/**/*,*}{ts,tsx,js,json,yml,scss}' '!**/{node_modules,dist}/**/*'"
+ },
+ "author": "",
+ "license": "ISC",
+ "description": "",
+ "devDependencies": {
+  "@types/express": "^5.0.0",
+  "@types/node": "^22.13.10",
+  "prettier": "^3.5.3",
+  "tsx": "^4.19.3",
+  "typescript": "^5.8.2"
+ },
+ "dependencies": {
+  "@trpc/server": "^10.45.2",
+  "@types/cors": "^2.8.17",
+  "cors": "^2.8.5",
+  "express": "^4.21.2"
+ }
 }
